@@ -7,6 +7,28 @@
   </head>
   <body>
     <h2>Web Crypto API Example</h2>
+    <form id="form">
+      <input type="text" name="text" id="text" />
+      <button style="margin-top: 10px" type="submit">Encrypt</button>
+    </form>
+    <div style="display: flex">
+      <h3>Encoded Text(Binary format): &nbsp;</h3>
+      <h4 id="encoded-text">--</h4>
+    </div>
+    <div style="display: flex">
+      <h3>Encrypted Text: &nbsp;</h3>
+      <h4 id="encrypted-text">--</h4>
+    </div>
+    <div style="display: flex">
+      <h3>Decrypted Text: &nbsp;</h3>
+      <h4 id="decrypted-text">--</h4>
+    </div>
+    <style>
+      h3,
+      h4 {
+        margin: 10px 0;
+      }
+    </style>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
